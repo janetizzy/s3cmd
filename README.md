@@ -1,5 +1,6 @@
 ## S3cmd tool for Amazon Simple Storage Service (S3)
 
+[![Build Status](https://travis-ci.org/s3tools/s3cmd.svg?branch=master)](https://travis-ci.org/s3tools/s3cmd)
 
 * Author: Michal Ludvig, michal@logix.cz
 * [Project homepage](http://s3tools.org)
@@ -11,6 +12,10 @@ S3tools / S3cmd mailing lists:
 * Announcements of new releases: s3tools-announce@lists.sourceforge.net
 * General questions and discussion: s3tools-general@lists.sourceforge.net
 * Bug reports: s3tools-bugs@lists.sourceforge.net
+
+S3cmd requires Python 2.6 or newer. 
+Python 3+ is also supported starting with S3cmd version 2.
+
 
 ### What is S3cmd
 
@@ -31,7 +36,7 @@ give these keys to S3cmd. Think of them as if they were a username and password 
 
 At the time of this writing the costs of using S3 are (in USD):
 
-$0.03 per GB per month of storage space used
+$0.026 per GB per month of storage space used
 
 plus
 
@@ -42,7 +47,8 @@ plus
 $0.000 per GB - first 1GB / month data downloaded
 $0.090 per GB - up to 10 TB / month data downloaded
 $0.085 per GB - next 40 TB / month data downloaded
-$0.070 per GB - data downloaded / month over 50 TB
+$0.070 per GB - next 100 TB / month data downloaded
+$0.050 per GB - data downloaded / month over 150 TB
 
 plus
 
@@ -329,7 +335,7 @@ For more information refer to the [S3cmd / S3tools homepage](http://s3tools.org)
 
 ### License
 
-Copyright (C) 2007-2015 TGRMN Software - http://www.tgrmn.com - and contributors
+Copyright (C) 2007-2019 TGRMN Software - http://www.tgrmn.com - and contributors
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
